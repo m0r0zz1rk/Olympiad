@@ -31,7 +31,7 @@ services:
       context: ./front
       dockerfile: Dockerfile
       args:
-        - BACKEND_URL=https://olymp.coko38.ru
+        - BACKEND_URL=***backend_url***
     volumes:
       - olympic_vue_dist:/front/dist
   nginx:

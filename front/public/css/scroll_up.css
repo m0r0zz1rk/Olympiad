@@ -1,0 +1,25 @@
+#button-up {
+    display:none;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    bottom: 50px;
+    outline:none;
+    width: 100px;
+    background-color: #00415d;
+    color: white;
+    line-height: 30px;
+    text-decoration: none;
+    padding: 0px 0 0 28px;
+
+    border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    -o-border-radius: 0 4px 4px 0;
+
+    box-shadow: 0 2px 4px #999;
+    -webkit-box-shadow: 0 2px 4px #999;
+    -moz-box-shadow: 0 2px 4px #999;
+    -o-box-shadow: 0 2px 4px #999;
+    cursor:pointer;
+}

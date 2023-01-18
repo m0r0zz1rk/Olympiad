@@ -1,0 +1,24 @@
+upstream olympic {
+    server drf:8000;
+}
+
+server {
+    listen 80;
+
+    location / {
+        root /front/dist;
+        index index.html index.htm;
+        try_files $uri $uri/ /index.html =404;
+    }
+
+    location /api/ {
+        proxy_pass https://olympic;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_
+        proxy_set_header Host $host;
+        proxy_redirect off;
+    }
+
+    location /media/ {
+        alias /home/drf/backend/media;
+    }
+}
